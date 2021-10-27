@@ -14,9 +14,13 @@ namespace modele.Services
         public void Add()        
         {            
             User user = new User();
+            Console.WriteLine("Podaj imię: ");
             user.Name = Console.ReadLine();
+            Console.WriteLine("Podaj nazwisko: ");
             user.LastName = Console.ReadLine();
+            Console.WriteLine("Podaj wiek: ");
             user.Age = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj date urodzenia: ");
             user.DateOfBirth = DateTime.Parse(Console.ReadLine());
             ur.Add(user);
         }
